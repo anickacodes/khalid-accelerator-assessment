@@ -25,7 +25,7 @@ useEffect(() => {
 }, []);
 
   return (
-    <section className="index" id="anime-list">
+    <section className="anime-index" id="anime-list">
     {loading ? (
         <p>Loading...</p>
       ) : animes.length > 0 ? (

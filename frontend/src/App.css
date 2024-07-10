@@ -11,12 +11,14 @@ body {
 
 .navbar {
   text-align: center;
-  background-color: #f8f4ec;
+  background-color: #af7e1a;
+  margin: 2px;
 }
 
 .navbar section {
   border-bottom: solid rgb(173, 173, 173);
 }
+
 .navbar-sub-section {
   display: flex;
   flex-direction: row;
@@ -41,13 +43,19 @@ body {
   list-style: none;
 }
 
-.anime-index {
+anime.index {
   height: 500px;
+}
+
+.anime-item {
+  border: 2px solid black;
 }
 
 .anime-main {
   display: flex;
   flex-direction: row;
+  border: 2px solid orange;
+
 }
 
 

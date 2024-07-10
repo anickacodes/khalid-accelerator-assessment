@@ -81,14 +81,13 @@ animes.delete('/:id', async (req, res) => {
   const { id } = req.params;
 
   try {
-    const anime = await getOneAnime(id);
+    const deletedAnime = await getOneAnime(id);
 
-    if (!anime) {
+    if (!deletedAnime) {
       return res.status(404).json({ error: 'Anime not found' });
     }
-
     await deleteOneAnime(id);
-    res.status(200).json({ message: 'Anime deleted successfully', deletedAnime: anime });
+    res.status(200).json({ message: 'Anime deleted successfully', deletedAnime: deletedAnime });
   } catch (err) {
     res.status(500).json({ error: 'An error occurred while deleting the anime' });
   }
